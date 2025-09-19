@@ -6,10 +6,7 @@ import os
 
 st.set_page_config(page_title="Land & Crop Price Analysis - Crabtree", layout="wide")
 st.title("Land and Crop Price Analysis - Crabtree")
-# Contact / share link for instructor (edit the email and URL below)
-prof_email = "professor@example.edu"
-prof_page = "https://www.example.edu/profile"
-st.markdown(f"**Share with instructor:** [Email {prof_email}](mailto:{prof_email}) | [Open profile]({prof_page})")
+
 
 # File paths
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
@@ -129,3 +126,4 @@ except FileNotFoundError:
 	st.warning("Price Received Index data not found in data folder.")
 except Exception as e:
 	st.warning(f"Error processing Price Received Index data: {e}")
+
